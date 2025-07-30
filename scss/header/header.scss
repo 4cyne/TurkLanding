@@ -1,0 +1,89 @@
+@use '../mixsins.scss' as *;
+@use './burger_menu.scss';
+@use './form.scss';
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  @include padding-desktop;
+  @media screen and (1200px > width) {
+    @include padding-mobile;
+  }
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__icon {
+    &_default {
+      display: inline;
+    }
+    &_hover {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+        position: relative;
+        display: inline-block;
+      }
+      a:hover {
+        .header__icon_default {
+          display: none;
+        }
+        .header__icon_hover {
+          display: inline;
+        }
+      }
+    }
+
+    &_wrapper {
+      display: flex;
+      gap: 30px;
+    }
+
+    &_number {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      @include roboto;
+      font-size: 0.875em;
+      font-weight: 900;
+    }
+
+    &_list {
+      > ul {
+        font-weight: 700;
+        font-size: 0.875em;
+        display: flex;
+        gap: 20px;
+        > li a:hover {
+          color: #3035c3;
+        }
+      }
+    }
+
+    &_button {
+      @include button;
+      width: 229px;
+    }
+    &_button:hover {
+      background-color: #be312b;
+    }
+  }
+}

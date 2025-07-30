@@ -1,0 +1,23 @@
+@use './reset.scss' as *;
+
+@use './header/header.scss';
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  position: relative;
+
+  a {
+    display: inline-block;
+    color: black;
+  }
+
+  span {
+    display: inline-block;
+  }
+  input {
+    display: inline-block;
+  }
+}

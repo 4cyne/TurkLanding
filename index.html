@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>Turkish Language Courses</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__row">
+        <div class="header__row_icons">
+          <a href="">
+            <img
+              class="header__icon_default"
+              src="./assets/icons/vk.svg"
+              alt="Vk" />
+            <img
+              class="header__icon_hover"
+              src="./assets/icons/vk-hover.svg"
+              alt="VK" />
+          </a>
+          <a href="">
+            <img
+              class="header__icon_default"
+              src="./assets/icons/instagram.svg"
+              alt="instagram" />
+            <img
+              class="header__icon_hover"
+              src="./assets/icons/instagram-hover.svg"
+              alt="instagram" />
+          </a>
+          <a href="">
+            <img
+              class="header__icon_default"
+              src="./assets/icons/facebook.svg"
+              alt="facebook" />
+            <img
+              class="header__icon_hover"
+              src="./assets/icons/facebook-hover.svg"
+              alt="facebook" />
+          </a>
+        </div>
+        <div class="header__row_wrapper">
+          <div class="header__row_number">
+            <img src="./assets/icons/phone.svg" alt="" />
+            <a href="tel:+74952253020"> +7 (495) 255-30-20 </a>
+          </div>
+          <div class="header__row_number">
+            <img src="./assets/icons/whatsapp.svg" alt="" />
+            <a href="tel:+79153599519"> +7 (915) 359-95-19 </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__row header__main-row">
+        <div class="header__row_logo">
+          <a href="">
+            <img src="./assets/logo/Logo.svg" alt="" />
+          </a>
+        </div>
+
+        <button class="burger-menu__button" id="burger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__row_list">
+          <ul>
+            <li><a href="">О центре</a></li>
+            <li><a href="">Онлайн обучение</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">База знаний</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__row_button" id="open-modal">
+          <img src="./assets/icons/btn phone.svg" alt="" />
+          Заказать звонок
+        </button>
+      </div>
+    </header>
+    <div class="overlay">
+      <div class="container" id="form">
+        <img
+          class="container__image"
+          src="./assets/images/Base_3x.webp"
+          alt="" />
+
+        <form action="" class="container__form">
+          <h1>Подача заявки</h1>
+          <p>
+            Оставьте свои контактные данные и наш менеджер свяжется с Вами в
+            ближайшее время
+          </p>
+          <div class="container__form_input">
+            <h3>Ваше имя и фамилия Имя и Фамилия</h3>
+            <input type="text" placeholder="Имя и Фамилия" />
+          </div>
+          <div class="container__form_input">
+            <h3>Ваш телефон/whatsapp</h3>
+            <input type="tel" placeholder="Телефон/Whatsapp" />
+          </div>
+          <div class="container__form_input">
+            <h3>Ваш e-mail</h3>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <button class="container__form_button">Подать заявку</button>
+        </form>
+        <img
+          class="container__close"
+          id="modal-close"
+          src="./assets/icons/Close.svg"
+          alt="" />
+      </div>
+    </div>
+    <div style="height: 1000px"></div>
+    <div style="height: 1000px"></div>
+    <div style="height: 1000px"></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
