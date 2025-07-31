@@ -11,6 +11,7 @@ const closeModalBtn = document.querySelector('#modal-close')
 openModalBtn.addEventListener('click', () => {
   modal.classList.add('active')
 })
+
 closeModalBtn.addEventListener('click', () => {
   modal.classList.remove('active')
 })

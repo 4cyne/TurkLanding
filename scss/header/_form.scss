@@ -11,6 +11,10 @@
   align-items: center;
   z-index: 1000;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -22,39 +26,45 @@
 }
 
 .container {
+  margin: 20px;
   opacity: 1;
   visibility: visible;
-
+  position: relative;
   background-color: #fff;
-  position: absolute;
   border: 1px solid red;
   display: flex;
   width: 60vh;
   height: 50vh;
   border-radius: 25px;
   overflow: hidden;
-  top: 15vh;
-  right: 50vh;
 
   &__image {
     flex: 1 0 40%;
     width: 10%;
     height: auto;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__close {
+    cursor: pointer;
     position: absolute;
-    width: 1em;
+    padding: 10px;
+    min-width: 1em;
     top: 20px;
     right: 20px;
   }
 
   &__form {
     display: flex;
+    justify-content: space-around;
     gap: 30px;
     flex-direction: column;
     flex: 1 0 60%;
     padding: 5%;
+
     > h1 {
       font-size: 2em;
       font-weight: 800;
