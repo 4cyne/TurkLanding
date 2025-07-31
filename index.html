@@ -119,9 +119,28 @@
           alt="" />
       </div>
     </div>
-    <div style="height: 1000px"></div>
-    <div style="height: 1000px"></div>
-    <div style="height: 1000px"></div>
+    <main class="main">
+      <div class="main__wrapper">
+        <p class="main__text">Мы работаем онлайн ежедневно только для вас!</p>
+        <p class="main__text_bold">
+          <span>Начните говорить по-турецки уже</span>
+          <span class="main__text_bold-red">через 2 месяца</span>
+        </p>
+        <button class="main__button"></button>
+      </div>
+      <div class="main__image">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/Rectangle-60_3x.webp" />
+          <source
+            media="(min-width: 800px)"
+            srcset="./assets/images/Rectangle-60_2x.webp" />
+          <source srcset="./assets/images/Rectangle-60.webp" />
+          <img src="./assets/images/Rectangle-60_2x.webp" alt="" />
+        </picture>
+      </div>
+    </main>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
