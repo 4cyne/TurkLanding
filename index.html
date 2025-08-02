@@ -100,15 +100,15 @@
           </p>
           <div class="container__form_input">
             <h3>Ваше имя и фамилия Имя и Фамилия</h3>
-            <input type="text" placeholder="Имя и Фамилия" />
+            <input name="user_name" type="text" placeholder="Имя и Фамилия" />
           </div>
           <div class="container__form_input">
             <h3>Ваш телефон/whatsapp</h3>
-            <input type="tel" placeholder="Телефон/Whatsapp" />
+            <input name="user_tel" type="tel" placeholder="Телефон/Whatsapp" />
           </div>
           <div class="container__form_input">
             <h3>Ваш e-mail</h3>
-            <input type="email" placeholder="E-mail" />
+            <input name="user_email" type="email" placeholder="E-mail" />
           </div>
           <button class="container__form_button">Подать заявку</button>
         </form>
@@ -126,7 +126,9 @@
           <span>Начните говорить по-турецки уже</span>
           <span class="main__text_bold-red">через 2 месяца</span>
         </p>
-        <button class="main__button"></button>
+        <button class="main__button" id="open-modal">
+          Записаться на пробный урок
+        </button>
       </div>
       <div class="main__image">
         <picture>

@@ -1,0 +1,54 @@
+@use '../mixsins.scss' as *;
+
+.main {
+  display: flex;
+  width: 100vw;
+
+  @media screen and (800px > width) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__wrapper {
+    height: fit-content;
+    padding: 100px 100px 0 100px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    @media screen and (800px > width) {
+      align-items: center;
+    }
+  }
+
+  &__image > picture > img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-120px);
+    @media screen and (800px > width) {
+      transform: translateY(0px);
+    }
+  }
+
+  &__text {
+    @include lato;
+    font-weight: 800;
+    color: #3035c3;
+
+    &_bold {
+      font-size: 3em;
+      font-weight: 800;
+      line-height: 130%;
+    }
+    &_bold-red {
+      color: #e6514a;
+    }
+  }
+
+  &__button {
+    @include button;
+    width: 375px;
+    height: 52px;
+  }
+}

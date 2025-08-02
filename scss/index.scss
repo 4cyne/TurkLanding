@@ -1,6 +1,7 @@
 @use './reset.scss' as *;
 @use './form/form.scss';
 @use './header/header.scss';
+@use './main/main.scss';
 
 body {
   margin: 0 auto;
@@ -8,7 +9,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   position: relative;
-
   a {
     display: inline-block;
     color: black;
@@ -19,5 +19,8 @@ body {
   }
   input {
     display: inline-block;
+  }
+  picture {
+    display: block;
   }
 }
